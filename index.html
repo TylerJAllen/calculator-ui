@@ -11,10 +11,10 @@ crossorigin="anonymous"></script>
     <title>Calculator</title>
   </head>
   <body>
-    <!--Add-->
+    <!--Calculator-->
     <div class="container">
     <h1>Calculator</h1>
-    <form id="add">
+    <form id="calc">
       <div class="form-group">
         <label for="input1">1st number:</label>
         <input id="input1" class="form-control" type="text">
@@ -25,26 +25,32 @@ crossorigin="anonymous"></script>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="operator" value="add" checked>
+          <input type="radio" name="operator" value="add" required>
           add
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="operator" value="subtract">
-          subtract
+          <input type="radio" name="operator" value="subtract" required>
+          subtract</p
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="operator" value="multiply">
+          <input type="radio" name="operator" value="multiply" required>
           multiply
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="operator" value="divide">
+          <input type="radio" name="operator" value="divide" required>
           divide
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="modulo" required>
+          modulo
         </label>
       </div>
       <button type="submit" class="btn">Add!</button>
